@@ -13,3 +13,12 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# IntelliJ IDEA
+.idea/
+*.iws
+out/
+
+# Gradle
+.gradle/
+build/
