@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">IMC_app</string>
+    <string name="app_title">IMC Calculator</string>
+    <string name="home">Home</string>
+    <string name="dona">Dona</string>
+
+    <string name="pes">Height</string>
+    <string name="height_format">%1$d inches</string>
+    <string name="weight">Weight</string>
+
+    <string name="weight_default">170</string>
+    <string name="default_inches">70 inches</string>
+    <string name="age_default">18</string>
+
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="age">age</string>
+    <string name="calculate">calculate</string>
+
+</resources>

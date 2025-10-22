@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="fons">#FF0a0a1e</color>
+    <color name="target">#FF302975</color>
+    <color name="card">#FF191e32</color>
+    <color name="textColor">#FF8C8C8E</color>
+    <color name="purpleColor">#FF502da5</color>
+    <color name="buttonColor">#FF4b4b5a</color>
+</resources>
