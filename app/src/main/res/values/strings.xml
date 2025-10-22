@@ -9,12 +9,13 @@
     <string name="weight">Weight</string>
 
     <string name="weight_default">170</string>
-    <string name="default_inches">70 inches</string>
+    <string name="inches">inches</string>
     <string name="age_default">18</string>
 
     <string name="plus">+</string>
     <string name="minus">-</string>
     <string name="age">age</string>
     <string name="calculate">calculate</string>
+    <string name="inches_default">70</string>
 
 </resources>

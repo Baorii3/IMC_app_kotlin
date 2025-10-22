@@ -1,5 +1,6 @@
 package com.example.imc_app
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.LinearLayout
@@ -34,6 +35,11 @@ class MainActivity : AppCompatActivity() {
         val btnWeightSub: Button = findViewById(R.id.btnWeightSub)
         val tvWeight: TextView = findViewById(R.id.tvWeightDefault)
 
+        val btnAgeAdd: Button = findViewById(R.id.btnAgeAdd)
+        val btnAgeSub: Button = findViewById(R.id.btnAgeSub)
+        val tvAge: TextView = findViewById(R.id.tvAgeDefault)
+
+        val btCalculate: Button = findViewById(R.id.btCalculate)
 
         var cardGender: String = ""
 
@@ -61,7 +67,7 @@ class MainActivity : AppCompatActivity() {
         var height = 70;
         seekHeight.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-                tvHeight.text = getString(R.string.height_format, progress)
+                tvHeight.text = progress.toString()
             }
 
             override fun onStartTrackingTouch(seekBar: SeekBar?) {
@@ -79,6 +85,23 @@ class MainActivity : AppCompatActivity() {
         btnWeightSub.setOnClickListener {
             weight = suma(weight,false)
             tvWeight.text = weight.toString()
+        }
+
+        var age = 18
+        btnAgeAdd.setOnClickListener {
+            age = suma(age,true)
+            tvAge.text = age.toString()
+        }
+        btnAgeSub.setOnClickListener {
+            age = suma(age,false)
+            tvAge.text = age.toString()
+        }
+
+        val imc: Float = (703f * weight) / (height * height)
+        btCalculate.setOnClickListener {
+            val intent = Intent(this,ResultActivity::class.java)
+            intent.putExtra("imc",imc)
+            startActivity(intent)
         }
 
     }

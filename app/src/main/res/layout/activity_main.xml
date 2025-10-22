@@ -132,20 +132,34 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 />
-            <TextView
-                android:id="@+id/tvHeight"
-                android:text="@string/default_inches"
-                android:textSize="26sp"
-                android:textColor="@color/white"
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvHeight"
+                    android:text="@string/inches_default"
+                    android:textStyle="bold"
+                    android:textSize="50sp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/tvInches"
+                    android:text="@string/inches"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
 
-                />
+            </LinearLayout>
             <SeekBar
                 android:id="@+id/sbHeight"
-                android:layout_height="30dp"
+                android:layout_height="25dp"
                 android:layout_width="match_parent"
-                android:layout_margin="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
                 android:max="140"
                 android:progress="70"
                 android:progressTint="@color/purpleColor"
@@ -185,6 +199,7 @@
                 android:textAllCaps="true"
                 android:textSize="20sp"
                 android:textColor="@color/textColor"
+                android:textStyle="bold"
 
                 />
             <TextView
@@ -257,8 +272,10 @@
                 android:textAllCaps="true"
                 android:textSize="20sp"
                 android:textColor="@color/textColor"
+
                 />
             <TextView
+                android:id="@+id/tvAgeDefault"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/age_default"
@@ -284,7 +301,6 @@
 
                 <Button
                     android:id="@+id/btnAgeAdd"
-
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:text="@string/plus"
