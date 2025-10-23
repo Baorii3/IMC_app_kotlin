@@ -17,5 +17,12 @@
     <string name="age">age</string>
     <string name="calculate">calculate</string>
     <string name="inches_default">70</string>
+    <string name="bmi_results">BMI Results</string>
+    <string name="your_results">Your Results</string>
+    <string name="re_calculate">re-calculate</string>
+    <string name="bajo_peso">Delgado</string>
+    <string name="normal">Normal</string>
+    <string name="sobrepeso">Sobrepeso</string>
+    <string name="obesidad">Obesidad</string>
 
 </resources>

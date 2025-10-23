@@ -97,8 +97,9 @@ class MainActivity : AppCompatActivity() {
             tvAge.text = age.toString()
         }
 
-        val imc: Float = (703f * weight) / (height * height)
+
         btCalculate.setOnClickListener {
+            val imc: Float = (703f * weight) / (height * height)
             val intent = Intent(this,ResultActivity::class.java)
             intent.putExtra("imc",imc)
             startActivity(intent)
@@ -109,7 +110,7 @@ class MainActivity : AppCompatActivity() {
     fun suma(numero:Int, suma: Boolean): Int {
         if (suma) return numero + 1
         else{
-           if (numero > 0) return numero - 1
+           if (numero > 1) return numero - 1
         }
         return numero
     }
