@@ -1,6 +1,7 @@
 package com.example.imc_app
 
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -28,9 +29,15 @@ class ResultActivity : AppCompatActivity() {
         tvResult = findViewById(R.id.tvResult)
         val tvImc: TextView = findViewById(R.id.tvIMC)
         tvDescription = findViewById(R.id.tvDescription)
-
         tvImc.text = String.format("%.2f", imc)
         textResult(imc)
+
+        val btnRecalculate: Button = findViewById(R.id.btReCalculate)
+
+        btnRecalculate.setOnClickListener {
+            finish()
+        }
+
     }
 
     override fun onSupportNavigateUp(): Boolean {

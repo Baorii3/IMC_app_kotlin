@@ -36,7 +36,7 @@
         app:layout_constraintBottom_toTopOf="@+id/cvResult"
         android:gravity="center"
         android:text="@string/your_results"
-        android:textSize="35sp"
+        android:textSize="50sp"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:layout_marginTop="20dp"
@@ -56,6 +56,7 @@
         >
 
         <LinearLayout
+            android:paddingVertical="40dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
